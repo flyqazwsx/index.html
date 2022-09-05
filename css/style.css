@@ -1,0 +1,164 @@
+body {
+    background-color: rgb(253, 247, 240);
+    font-family: 標楷體, 新細明體, 微軟正黑體, sans-serif;
+}
+
+.title {
+    margin: 12px;
+    /*padding: 10px 20px 30px 40px;*/
+    background-color: rgb(245, 141, 5);
+    color: rgb(5, 68, 185);
+    font-family: 標楷體;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    height: 4rem;
+    border-radius: 0.8rem;
+    /* 垂直置中 */
+    line-height: 4rem;
+    /* 水平置中 */
+    text-align: center;
+}
+
+.text-1 {
+    font-size: 1.5rem;
+    background-color: rgb(209, 243, 243);
+    margin: 6px 0px;
+    padding: 6px;
+    border: 2px solid salmon;
+    font-size: 1rem;
+    line-height: 24px;
+}
+
+.text-2 {
+    background-color: rgb(217, 188, 247);
+    border-radius: 3px;
+    font-size: 1.2rem;
+
+}
+
+.text-4 {
+    text-align: left;
+    line-height: 24px;
+}
+
+.text-4 a {
+    background-color: red;
+    border-radius: 3px;
+}
+
+.sub-title {
+    margin: 6px 0px;
+    background-color: rgb(9, 102, 243);
+    color: aliceblue;
+    border-radius: 6px;
+    font-size: 1.6rem;
+    padding: 6px 12px;
+    font-family: 標楷體;
+}
+
+#container {
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+ol {
+    text-align: left;
+}
+
+li {
+    margin-left: 30px;
+
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul a {
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+ul a:hover {
+    color: blueviolet;
+
+}
+
+ul a:active {
+    color: red;
+}
+
+ul a:visited {
+    color: blue;
+}
+
+#image {
+    background-color: burlywood;
+    padding: 6px;
+}
+
+#image img {
+    background-color: white;
+    padding: 3px;
+    width: 30%;
+}
+
+#main-table {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    height: 300px;
+    margin-top: 10px;
+}
+
+#main-table th {
+    background-color: coral;
+    color: white;
+}
+
+#main-table td {
+    background-color: aqua;
+}
+
+#main-table td:first-child {
+    background-color: red;
+    color: white;
+}
+
+#main-table td:last-child {
+    background-color: rgb(187, 7, 241);
+
+}
+
+#main-table td:nth-child(odd) {
+    background-color: rgb(6, 160, 75);
+
+}
+
+form {
+    background-color: rgb(199, 21, 146);
+    padding: 12px 0px;
+    margin: 6px;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+}
+
+input,
+textarea,
+label {
+    font-size: 20px;
+    text-align: center;
+    margin: 6px;
+}
+
+button[type="submit"] {
+    background-color: greenyellow;
+    font-size: 20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+}
