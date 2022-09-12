@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 
 <head>
     <meta charset="UTF-8">
@@ -8,13 +8,20 @@
     <title>計算BMI</title>
     <link rel="stylesheet" href="./css/style.css">
     <style>
-        form {
+        #box {
+            background-color: rgb(157, 71, 255);
+            margin-top: 12px;
+            padding: 24px 0px;
+            border-radius: 12px;
+        }
+
+        #box {
             width: 50%;
             margin: 24px auto;
         }
 
         @media screen and (max-width:768px) {
-            form {
+            #box {
                 width: 100%;
             }
 
@@ -24,26 +31,48 @@
                 font-size: 18px;
             }
         }
+
+
+
+
+
+        #comment {
+            background-color: aqua;
+            color: black;
+            width: 80%;
+            margin: 0 auto;
+            height: 128px;
+            font-size: 48px;
+            line-height: 128px;
+            border-radius: 12px;
+
+        }
     </style>
 </head>
 
 <body>
-    <div class="title">BMI計算機</h1>
-        <form action="">
+    <div id="container">
+        <div class="title">BMI計算機</div>
+        <div id="box">
             <label for="name">姓名</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" placeholder="姓名">
             <br>
             <label for="height">身高</label>
-            <input type="number" name="height" id="height" required step="0.1">
+            <input type="number" name="height" id="height" required step="0.1" placeholder="身高">
             <br>
-            <label for="width">體重</label>
-            <input type="number" name="width" id="width" required step="0.1">
+            <label for="weight">體重</label>
+            <input type="number" name="weight" id="weight" step="0.1" placeholder="體重" required>
             <p>
-                <button type="submit">計算</button>
+                <button type="submit" id="calc">計算</button>
             </p>
-            <a href="./index.html">回首頁</a>
+            <p id="comment">
+                BMI:<span class="bmi"></span>
+            </p>
 
-        </form>
+        </div>
+        <a href="./index.html">回首頁</a>
+    </div>
+    <script src="./js/bmi.js"></script>
 </body>
 
 </html>
